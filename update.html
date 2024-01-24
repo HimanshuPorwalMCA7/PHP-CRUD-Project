@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User</title>
+    <link rel="stylesheet" type="text/css" href="update.css">
+
+</head>
+<body>
+
+    <h2>Update User Information</h2>
+
+    
+            <form action="update.php" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                
+                <label for="id">Enter Id:</label>
+                <input type="text" id="name" name="id"  ?>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  ?>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  ?>
+
+
+                <label for="newImage">New Image:</label>
+                <input type="file" id="newImage" name="newImage" accept="image/*">
+
+                <button type="submit">Update Information</button>
+            </form>
+            
+
+</body>
+</html>
